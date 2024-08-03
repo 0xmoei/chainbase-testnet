@@ -47,3 +47,18 @@ export PATH=$PATH:~/bin
 eigenlayer --version
 ```
 
+## Create or Import Eigenlayer Key
+- Create a new Key
+
+> Replace `KEYNAME`
+```console
+eigenlayer operator keys create --key-type ecdsa KEYNAME
+```
+
+
+- Import an Old Key
+
+> Replace `KEYNAME` & `PRIVATEKEY`
+```console
+eigenlayer operator keys import --key-type ecdsa KEYNAME PRIVATEKEY
+```
