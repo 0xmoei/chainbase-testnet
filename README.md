@@ -141,7 +141,7 @@ eigenlayer operator status operator.yaml
 ![image](https://github.com/user-attachments/assets/6b30b646-dc18-4088-a199-bcb4e01c367a)
 
 ## 8. Config Chainbase AVS
-1- Create .env file
+**1- Create .env file**
 ```console
 # Delete old files
 rm -rf .env
@@ -150,7 +150,7 @@ rm -rf .env
 nano .env
 ```
 
-2- Paste below codes in it
+**2- Paste below codes in it**
 * `NODE_ECDSA_KEY_PASSWORD`: Replace `***123ABCabc123***` with your Eigenlayer password
 * Optional: You can Change #TODO lines if needed but it should be okay by default
 ```
@@ -210,7 +210,7 @@ NODE_ECDSA_KEY_FILE_HOST=${EIGENLAYER_HOME}/operator_keys/opr.ecdsa.key.json
 NODE_ECDSA_KEY_PASSWORD=***123ABCabc123***
 ```
 
-3- Create `docker-compose.yml` file
+**3- Create `docker-compose.yml` file**
 ```console
 # Remove old file
 rm -rf docker-compose.yml
@@ -219,7 +219,7 @@ rm -rf docker-compose.yml
 nano docker-compose.yml
 ```
 
-4- Paste below codes in it and save with CTRL+X+Y+ENTER
+**4- Paste below codes in it and save with CTRL+X+Y+ENTER**
 * You can change ports if any of them are in use: 8081, 9091, 8080, 9092
 * If you want to change `8081` to `35081` then just change the port on the left side like: `35081:8081`
 ```
@@ -289,17 +289,17 @@ networks:
     driver: bridge
 ```
 
-5- Create folders for docker
+**5- Create folders for docker**
 ```console
 source .env && mkdir -pv ${EIGENLAYER_HOME} ${CHAINBASE_AVS_HOME} ${NODE_LOG_PATH_HOST}
 ```
 
-6- Give permissions to bash script
+**6- Give permissions to bash script**
 ```console
 chmod +x ./chainbase-avs.sh
 ```
 
-7- update prometheus.yml
+**7- update prometheus.yml**
 * Replace ${YOUR_OPERATOR_NAME} with your operator address
 ```console
 nano prometheus.yml
