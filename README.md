@@ -219,7 +219,7 @@ rm -rf docker-compose.yml
 nano docker-compose.yml
 ```
 
-4- Paste below codes in it
+4- Paste below codes in it and save with CTRL+X+Y+ENTER
 * You can change ports if any of them are in use: 8081, 9091, 8080, 9092
 * If you want to change `8081` to `35081` then just change the port on the left side like: `35081:8081`
 ```
