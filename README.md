@@ -120,9 +120,9 @@ nano metadata.json
 3- Upload `metadata.json` to your github repository and get its **raw link** like previous step
 * You can create a metadata.json file in github with the contents of your file or you must download it from VPS using Termius or Mobaxterm ssh clients
 
-4- Open `operator.json` edit menu
+4- Open `operator.yaml` edit menu
 ```console
-nano operator.json
+nano operator.yaml
 ```
 
 5- Add your metadata.json raw url in github in front of `metadata-url`
