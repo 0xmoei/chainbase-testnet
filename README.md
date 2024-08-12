@@ -352,7 +352,7 @@ curl -i localhost:8080/eigen/node/health
 Check docker containers
 * You must have 4 new docker containers
 ```console
-Docker PS
+docker ps
 ```
 
 ![image](https://github.com/user-attachments/assets/f2b9d3e2-8e4f-48d5-bb24-b1b5744c11d6)
