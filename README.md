@@ -113,7 +113,13 @@ nano metadata.json
 * `logo`: Must be raw link to your operator favorite logo
 * Logo only supports `.png` file less than 1MB in size
 * Create a repositry in github and upload `.png` there
-* To get your logo raw link: **1)** Navigate to the file in your repository, **2)** Click on the file name to view its contents, **3)** In the address bar of your browser, **4)** replace `blob` with `raw` in the URL, **5)** Press Enter to load the raw content view, **6)** Copy the updated URL from the address bar and paste in front of `logo` field in `metadata.json`
+* To get your logo raw link:
+  * **1)** Navigate to the file in your repository
+  * **2)** Click on the file name to view its contents
+  * **3)** In the address bar of your browser
+  * **4)** replace `blob` with `raw` in the URL
+  * **5)** Press Enter to load the raw content view
+  * **6)** Copy the updated URL from the address bar and paste in front of `logo` field in `metadata.json`
 * My example `metadata.json` file in github: https://github.com/0xmoei/chainbase-testnet/blob/main/metadata.json
 * `Ctrl+X+Y+Enter` to save `metadata.json`
 
